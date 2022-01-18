@@ -1,0 +1,35 @@
+### Get root route
+GET http://localhost:4400
+
+### Get all links
+GET http://localhost:4400/api/links
+
+### Create a link
+POST http://localhost:4400/api/links
+Content-Type: application/json
+
+{"title": "Angular", "link": "https://angular.io"}
+
+### Update a link (6141263aeb26f7dd43ef743c)
+PUT http://localhost:4400/api/links/6141263aeb26f7dd43ef743c
+Content-Type: application/json
+
+{"title": "Angular 11+", "link": "https://angular.io"}
+
+### Get a link (6141263aeb26f7dd43ef743c)
+GET http://localhost:4400/api/links/6141263aeb26f7dd43ef743c
+
+### Delete a link (6141263aeb26f7dd43ef743c)
+DELETE http://localhost:4400/api/links/6141263aeb26f7dd43ef743c
+Content-Type: application/json
+
+
+
+### Get all users
+GET http://localhost:4400/api/users
+
+### Create a user
+POST http://localhost:4400/api/users
+Content-Type: application/json
+
+{"name": "Kent Vargas", "avatar": "https://randomuser.me/api/portraits/men/7.jpg"}
