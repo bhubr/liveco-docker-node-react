@@ -7,6 +7,8 @@ COPY tsconfig.json .
 
 RUN npm i
 
-COPY src/ src
+# Remplacé par un "bind" entre le dossier src/ de l'hôte
+# et le dossier /app/src du conteneur
+# COPY src/ src
 
-CMD npm start
+CMD npm run dev
