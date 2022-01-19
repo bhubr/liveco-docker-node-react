@@ -1,0 +1,16 @@
+version: "3.9"
+
+services:
+  backend:
+    build: backend
+    ports:
+      - 4400:4400
+    volumes:
+      - ./backend/src:/app/src
+    environment:
+      - MONGO_HOST=database
+
+  database:
+    image: mongo:4.4
+    volumes:
+      - ./mongo-data:/data/db
